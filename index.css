@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  header {
+    background: #383838;
+    color: #fff;
+    padding: 3rem 0;
+    text-align: center;
+  }
+  
+  
+  header ul {
+    list-style: none;
+  }
+  
+  header ul li {
+    display:inline;
+    margin: 65px;
+    font-size: 22px;
+  }
+  
+  header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  header ul li a:hover {
+    color: #FFBD59;
+
+
+  }
+  
+  section {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 50px 0;
+  }
+  
+  .intro {
+    background: url('IMAGES/Frame\ 1.jpg') no-repeat center center/cover;
+    color: white;
+    width: auto;
+    padding: 280px 0;
+    text-align: center ;
+    text-transform: uppercase;
+  }
+  .intro h1{
+    font-size:100px;
+    color: #FFBD59;
+    text-shadow: #ddd;
+    padding-right: 5px;
+    padding-left: 50px;
+  }
+  
+  .intro p{
+    padding-left: 50px;
+  }
+  #home h1 {
+    font-size: 2.5rem;
+  }
+  
+  /* about section*/
+
+  #about .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  #about img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  /* Skills Section */
+  #skills {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+  }
+
+  #skills h2 {
+    margin-bottom: 40px;
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .skill-card {
+    width: 250px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .skill-card:hover {
+    transform: translateY(-10px);
+    background:#46a693;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .skill-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #383838;
+  }
+
+  .progress-bar {
+    background-color: #dfdfe3;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+  }
+
+  .progress {
+    background-color: #FFBD59;
+    height: 100%;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 20px;
+    color: #383838;
+    border-radius: 10px 0 0 10px;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skills-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .skill-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+
+
+
+  /* projectsection */
+  #projects .project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  .project-item p {
+    text-align: justify;
+    font-style: Tahoma;
+  }
+
+  #projects button{
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight:bold;
+  }
+  
+  #projects button:hover{
+    background-color: #FFBD59;
+    color: #383838;
+  }
+  
+    
+
+  /* resume*/
+
+  #resume a {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #resume a:hover {
+    background-color: #FFBD59;
+    color: #383838;
+
+  }
+
+  /* Certificates Section */
+#certificates {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f4f4f9;
+}
+
+#certificates h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.scrolling-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px;
+}
+
+.scroll-card {
+  flex: 0 0 auto;
+  background-color: #FFBD59;
+  margin-right: 20px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-card img {
+  width: 95%;
+  height: 65%;
+  border-radius: 10px;
+}
+
+/* Hide default scrollbar */
+.scrolling-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.scrolling-wrapper {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .scroll-card {
+    width: 150px;
+  }
+}
+  /* Connect with Me Section */
+  #connect {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f4f4f9;
+  }
+
+  #connect h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 80px; /* Space between icons */
+  }
+
+  .social-links a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+
+  .social-links img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Hover effect to scale icons */
+  .social-links a:hover {
+    transform: scale(1.2);
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .social-links {
+      gap: 20px;
+    }
+    
+    .social-links img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  
+  #contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  #contact input,
+  #contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #contact button:hover {
+    background-color: #FFBD59;
+    color: #383838;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+
+
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #about .about-content {
+      flex-direction: column;
+    }
+  
+    #home h1 {
+      font-size: 2rem;
+    }
+  }
+  
+ 
